@@ -87,15 +87,20 @@ header {
     color: #668fe2;
 }
 
+
 .web-dev {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 130px 55px;
+    padding: 60px 160px;
+}
+
+.dev-image {
+    padding: 0px 12px;
 }
 
 .dev-description {
-    width: 97%;
+    width: 650px;
     line-height: 24px;
 }
 
@@ -126,7 +131,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 130px 55px;
+    padding: 60px 160px;
 }
 
 .services {
@@ -134,7 +139,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 95px 0px;
+    padding: 95px 20px;
 }
 
 .first-item {
@@ -161,7 +166,7 @@ header {
 
 .testimonial {
     background-color: #FAFAFA;
-    padding: 80px 0px;
+    padding: 80px 13px;
 }
 
 .testimonial-title {
@@ -216,6 +221,7 @@ header {
     flex-direction: row;
     justify-content: center;
     margin-top: 90px;
+    padding: 0px 30px;
 }
 
 .partners-logo {
@@ -260,6 +266,12 @@ header {
     margin-left: 10px;
 }
 
+.dev-description {
+    width: 650px;
+    line-height: 24px;
+    margin: auto;
+}
+
 .teams-paragraph {
     color: white;
     text-align: center;
@@ -272,7 +284,7 @@ header {
     flex-direction: row;
     justify-content: space-around;
     background-color: #7690C5;
-    padding: 105px 150px 0px 150px;
+    padding: 50px;
 }
 
 .social-wrapper {
@@ -281,6 +293,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 65px 0px;
+    width: 500px;
 }
 
 .social-item {
@@ -322,6 +335,8 @@ header {
     display: flex;
     flex-direction: column;
     padding-bottom: 50px;
+    width: 530px;
+    margin: auto;
 }
 
 .form-part input,
@@ -331,7 +346,6 @@ textarea {
     padding: 20px;
     margin-top: 25px;
     border-radius: 5px;
-    width: 90%;
 }
 
 #copyright {
@@ -385,6 +399,10 @@ footer {
         padding: 15px 28px;
         font-size: 16px;
     }
+
+    .dev-description h1 {
+        font-size: 38px;
+    }
 }
 
 @media only screen and (max-width: 925px) {
@@ -392,6 +410,7 @@ footer {
         display: flex;
         flex-direction: column-reverse;
         text-align: center;
+        padding: 60px 20px;
     }
 
     .dev-image {
@@ -402,10 +421,11 @@ footer {
         display: flex;
         flex-direction: column;
         text-align: center;
+        padding: 60px 20px;
     }
 
     .social-wrapper {
-        width: 660px;
+        width: 565px;
         margin: auto;
     }
 
@@ -420,6 +440,10 @@ footer {
 
     .message-box span {
         font-size: 16px;
+    }
+
+    .dev-image img {
+        height: 155px;
     }
 }
 
@@ -463,6 +487,81 @@ footer {
     .members-wrapper {
         margin-bottom: 60px;
     }
+
+    .testimonial-title h1 {
+        font-size: 45px;
+    }
+
+    .lest-section-title h1 {
+        font-size: 45px;
+    }
+
+    .dev-description {
+        width: 585px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .dev-description {
+        width: 530px;
+        margin: auto;
+    }
+
+    .form-part {
+        width: 480px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .form-part {
+        width: 450px;
+        margin: auto;
+    }
+
+    .social-wrapper {
+        width: 454px;
+        margin: auto;
+    }
+
+    .social-item {
+        width: 226px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .dev-description {
+        width: 480px;
+        margin: auto;
+    }
+
+    .dev-description p {
+        font-size: 15px;
+    }
+
+    .social-wrapper {
+        width: 454px;
+        margin: auto;
+    }
+
+    .form-part {
+        width: 425px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    .social-wrapper {
+        width: 400px;
+        margin: auto;
+    }
+
+    .form-part {
+        width: 376px;
+        margin: auto;
+    }
 }
 
 @media only screen and (max-width: 630px) {
@@ -479,16 +578,13 @@ footer {
         font-size: 11px;
     }
 
-    .web-dev {
-        padding: 90px 55px;
-    }
-
     .dev-image img {
         height: 130px;
     }
 
-    .branding-section {
-        padding: 65px 55px;
+    .dev-description {
+        width: 430px;
+        margin: auto;
     }
 
     .person-image img {
@@ -533,7 +629,7 @@ footer {
     }
 
     .social-wrapper {
-        width: 390px;
+        width: 180px;
         padding: 65px 0px 0px 0px;
     }
 
@@ -541,12 +637,6 @@ footer {
         height: 53px;
     }
 
-    .last-section {
-        padding: 65px 100px 0px 150px;
-    }
-}
-
-@media only screen and (max-width: 630px) {
     .nav-items {
         display: none;
     }
@@ -561,5 +651,70 @@ footer {
 
     .social-wrapper {
         flex-direction: column;
+    }
+}
+
+
+@media only screen and (max-width: 465px) {
+    .dev-description {
+        width: 375px;
+        margin: auto;
+    }
+
+    .form-part {
+        width: 325px;
+        margin: auto;
+        padding-bottom: 0px;
+    }
+
+    #copyright {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 395px) {
+    .home-content {
+        width: 70%;
+        margin: auto;
+    }
+
+    .home-content h2 {
+        font-size: 13px;
+    }
+
+    .home-content h1 {
+        font-size: 22px;
+    }
+
+    .home-content button {
+        padding: 7px 16px;
+        font-size: 11px;
+    }
+
+    .teams-paragraph p {
+        font-size: 13px;
+    }
+
+    .partners {
+        padding: 0px 15px;
+    }
+
+    .dev-description {
+        width: 290px;
+        margin: auto;
+    }
+
+    .form-part {
+        width: 260px;
+        margin: auto;
+        padding-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .form-part {
+        width: 220px;
+        margin: auto;
+        padding-bottom: 0px;
     }
 }
